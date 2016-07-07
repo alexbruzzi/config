@@ -44,6 +44,17 @@ aws:
   bucket_name: 'octo-enterprise'
 ioscertificate:
   filename: 'ioscertificate.pem'
+mandrill_api_key: 'xxxxxxxxxxx-generated-api-key-xxxxxxxxxxx'
+email_sender:
+  name: 'Ravin Gupta'
+  email: 'ravin.gupta@octo.ai'
+email_to:
+  - name: 'Dipankar Sarkar'
+    email: 'dipankar@octo.ai'
+  - name: 'Akshay Aron'
+    email: 'aron@octo.ai'
+  - name: 'Pranav'
+    email: 'pp@octo.ai'
 # These are the default templates that would be set for any new enterprise added
 push_templates:
   - name: trending
