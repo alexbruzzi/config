@@ -40,6 +40,8 @@ aws:
   bucket_name: 'octo-enterprise'
 ioscertificate:
   filename: 'ioscertificate.pem'
+search:
+  server: http://127.0.0.1:9200
 # These are the default templates that would be set for any new enterprise added
 push_templates:
   - name: trending
