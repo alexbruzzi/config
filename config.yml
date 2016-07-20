@@ -29,14 +29,18 @@ allowed_events:
   - page.view
   - productpage.view
   - update.push_token
+  - update.profile
+  - product.add
+  - product.update
+  - product.delete
 kong:
   url: 'http://127.0.0.1:8001'
 apns:
   host: 'gateway.sandbox.push.apple.com'
 aws:
   region: 'ap-southeast-1'
-  secret_key: 'S6wzZDwQDoWAF7U+mbuFHR5uUhzp8ybxiJJjB8Yg'
-  access_key: 'AKIAJSPC6N3YAZRKVJTA'
+  secret_key: 'AWS_SECRET_KEY'
+  access_key: 'AWS_ACCESS_KEY'
   bucket_name: 'octo-enterprise'
 ioscertificate:
   filename: 'ioscertificate.pem'
@@ -44,6 +48,17 @@ search:
   server: http://127.0.0.1:9200
   disk_threshold_low: 0.94
   disk_threshold_high: 0.98
+mandrill_api_key: 'xxxxxxxxxxx-generated-api-key-xxxxxxxxxxx'
+email_sender:
+  name: 'Octomatic'
+  email: 'info@octo.ai'
+email_to:
+  - name: 'Dipankar Sarkar'
+    email: 'dipankar@octo.ai'
+  - name: 'Akshay Aron'
+    email: 'aron@octo.ai'
+  - name: 'Pranav Prakash'
+    email: 'pp@octo.ai'
 # These are the default templates that would be set for any new enterprise added
 push_templates:
   - name: trending

@@ -1,7 +1,7 @@
 :clients:
-  - :name: Jabong
-    :email: admin@jabong.com
-    :password: user
+  - :name: Jaobng
+    :email: admin@jaobng.com
+    :password: yothisisnotapassword
     :admin: false
     :rate-limiting:
       :day: 100000
@@ -12,7 +12,7 @@
       :year: 1000000000
   - :name: Octo
     :email: api@octo.ai
-    :password: admin
+    :password: randompasswordhere
     :admin: true
 :apis:
   - :name:  events
@@ -41,6 +41,5 @@
     :apis:
       - :events
     :clients:
-      - Jabong
+      - Jaobng
 :kong: 127.0.0.1:8001
-
