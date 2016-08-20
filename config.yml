@@ -33,6 +33,7 @@ allowed_events:
   - product.add
   - product.update
   - product.delete
+  - funnel_update
 kong:
   url: 'http://127.0.0.1:8001'
 apns:
@@ -59,6 +60,8 @@ email_to:
     email: 'aron@octo.ai'
   - name: 'Pranav Prakash'
     email: 'pp@octo.ai'
+# This session is stored in redis for every user. Value in seconds
+session_length: 5
 # These are the default templates that would be set for any new enterprise added
 push_templates:
   - name: trending
@@ -109,4 +112,3 @@ intelligent_segments:
       - Octo::Segmentation::Operators::EQUAL
     values:
       - Octo::UserPersona::DEAD
-
