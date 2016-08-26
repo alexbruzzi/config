@@ -8,12 +8,14 @@ cassandra:
     class: SimpleStrategy
     replication_factor: 1
 redis:
+  enabled: true
   host: 127.0.0.1
   port: 6379
 statsd:
   host: 127.0.0.1
   port: 8125
 kafka:
+  enabled: true
   brokers:
     - 127.0.0.1:9092
   client_id: octomatic_development
@@ -35,6 +37,7 @@ allowed_events:
   - product.delete
   - funnel_update
 kong:
+  enabled: false
   url: 'http://127.0.0.1:8001'
 apns:
   host: 'gateway.sandbox.push.apple.com'
