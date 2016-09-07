@@ -1,0 +1,16 @@
+:clients:
+  - :name: Jaobng
+    :email: admin@jaobng.com
+    :password: yothisisnotapassword
+    :admin: false
+  - :name: Octo
+    :email: api@octo.ai
+    :password: randompasswordhere
+    :admin: true
+:apis:
+  - :name:  events
+    :request_path: /events
+    :upstream_url: http://127.0.0.1:9001/events
+  - :name:  UpdatePushToken
+    :request_path: /update_push_token
+    :upstream_url: http://127.0.0.1:9001/update_push_token
